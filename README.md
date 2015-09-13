@@ -1,8 +1,6 @@
 # Calculation-of-the-theta-function
 Following the result by Reineke in Poisson automorphisms and quiver moduli (arXiv: 0804.3214), there is the MAPLE program to compute theta fuction as in definition 4.1 in the paper.
 
-This is pdq from a Reineke's paper -- Poisson automorphisms and quiver moduli
-
 pmumut:= proc(q,d1,d2,m,inf)
   #This is the p_mu(t) in Prop4.1 (3)
   local i,pmu,pd;
