@@ -3,13 +3,20 @@ Following the result by Reineke in Poisson automorphisms and quiver moduli (arXi
 
 pmumut:= proc(q,d1,d2,m,inf)
   #This is the p_mu(t) in Prop4.1 (3)
+  
   local i,pmu,pd;
     pmu:=1;
+    
     for i from 1 to inf do
+    
       pd:=simplify(pdq(m,i*d1,i*d2,q));
+      
       pmu:=pmu + pd*T^i;
+      
     od;
+    
   pmu;
+  
 end;
 
 mutwistedpt:= proc(q,d1,d2,m,e1,e2,inf)
